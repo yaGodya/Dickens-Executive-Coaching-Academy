@@ -26,6 +26,13 @@ h1,h2,h3,h4,h5,h6 {
   margin: 0;
 }
 
+input,
+textarea,
+button {
+  outline: none; /* Убирает стандартную обводку */
+  border: none;  /* Убирает границу, если она есть */
+} 
+
 hr {
   box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
