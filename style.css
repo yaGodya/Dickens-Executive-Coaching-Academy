@@ -1,16 +1,19 @@
 body {
   font-family: "Roboto", "Poppins", sans-serif;
   margin: 0 auto;
-  max-width: 1340px;
-  width: 100%;
+  background-color: #fbfbfb;
+  scroll-behavior: smooth;
+  /* max-width: 1340px;
+  width: 100%; */
 }
 
 /* colors: #343434, #003366, #e0e7ef, #fbfbfb , #EFF3F7*/
 
-/* .wrapper { 
+.wrapper {
   max-width: 1340px;
   width: 100%;
-} */
+  margin: 0 auto;
+}
 
 .title {
   font-family: "Poppins";
@@ -20,54 +23,46 @@ body {
   text-transform: uppercase;
 }
 
-.header {
-  width: 100%;
+.header_content {
   padding: 16px 0;
-  margin-bottom: 50px;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  max-width: 1340px;
-  margin: 0 auto;
+  margin-bottom: 50px;
 }
 
-.header_logo {
-}
-
-.logo_link {
-}
 .logo_img {
   height: 48px;
   width: 48px;
+}
+
+.logo {
   transition: transform 0.5s ease;
   transform-origin: center;
 }
 
-.logo_img:hover {
+.logo:hover {
   transform: scale(1.1) rotate(180deg);
 }
 
-.header_navigation {
-}
 .navigation {
   display: flex;
   gap: 56px;
   align-items: center;
 }
+
 .navigation_list {
   display: flex;
   gap: 16px;
 }
+
 .list {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-.list_item {
 }
 
 .list_item-link {
@@ -78,8 +73,6 @@ body {
   position: relative;
   display: inline-block;
   text-decoration: none;
-
-  /* background-color: red; */
 }
 
 .list_item-link::after {
@@ -193,11 +186,14 @@ body {
 
 .advantages {
   background-color: #e0e7ef;
+  margin-bottom: 50px;
+}
+
+.advantages_content {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 50px 0 53px;
-  margin-bottom: 50px;
 }
 
 .advantages_title {
@@ -241,13 +237,14 @@ body {
 /******************************* about section ***************************************/
 
 .about {
+  margin-bottom: 100px;
+}
+.about_content {
   display: flex;
   flex-direction: column;
-  margin-bottom: 100px;
 }
 .about_us {
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-between;
   margin-bottom: 20px;
 }
@@ -336,6 +333,9 @@ body {
 
 .courses {
   margin-bottom: 120px;
+}
+
+.courses_content {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -462,7 +462,8 @@ body {
   gap: 16px;
   align-items: center;
 }
-.price-label,.price-value {
+.price-label,
+.price-value {
   font-weight: 500;
   font-size: 30px;
   line-height: 45px;
@@ -479,9 +480,9 @@ body {
   color: #fbfbfb;
   transition: all 0.5s ease;
   border: 1px solid #003366;
-  display: inline-block;
-  align-self: flex-start; 
-  padding: 14px 85px; 
+  /* display: inline-block; */
+  align-self: flex-start;
+  padding: 14px 85px;
   width: auto;
 }
 
@@ -492,13 +493,13 @@ body {
 
 /******************************* call section ***************************************/
 
-
 .call-section {
   background-color: #003366;
+  margin-bottom: 50px;
+}
+.call_content {
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
-
 }
 .call-container {
   display: grid;
@@ -506,8 +507,8 @@ body {
   gap: 4px;
   padding: 50px 0;
 }
-.call-text { 
-  padding: 33px 0 ;
+.call-text {
+  padding: 33px 0;
 }
 .call-title {
   color: #fbfbfb;
@@ -525,10 +526,10 @@ body {
   gap: 40px;
 }
 
-.input-block { 
-display: flex;
-flex-direction: column;
-gap: 24px;
+.input-block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .call-input {
@@ -541,8 +542,8 @@ gap: 24px;
 }
 
 .call-button {
-  align-self: flex-start; 
-  padding: 14px 30px; 
+  align-self: flex-start;
+  padding: 14px 30px;
   width: auto;
   color: #003366;
   border: 1px solid #003366;
@@ -557,31 +558,285 @@ gap: 24px;
 
 /******************************* testimonials section ***************************************/
 
+.testimonials-section {
+  margin-bottom: 100px;
+}
+
+.testomonials-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.testimonials-title {
+  color: #003366;
+  margin-bottom: 20px;
+}
+.testimonials-slider {
+  display: flex;
+  gap: 24px;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px 78px 20px 20px;
+  border: 1px solid #003366;
+  border-radius: 12px;
+}
+.testimonial-image {
+}
+
+.testimonial-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.testimonial-text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.testimonial-name {
+  font-family: "Poppins";
+  font-weight: 500;
+  line-height: 30px;
+  font-size: 20px;
+  color: #343434;
+}
+
+.testimonial-role {
+  font-size: 16px;
+  line-height: 24px;
+  color: #6b6b6b;
+}
+
+.testimonial-rating {
+  display: flex;
+}
+.testimonial-text {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.slider-controls {
+  padding: 12px 14px;
+  border: 1px solid #bfccd8;
+  border-radius: 100px;
+  width: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  max-width: 220px;
+}
+.slider-button {
+  cursor: pointer;
+}
+
+.slider-img {
+  height: 32px;
+  width: 32px;
+  transition: all 0.3s ease;
+}
+
+.slider-img:hover {
+  transform: scaleX(1.05);
+}
+
+.scroll-indicators {
+  display: flex;
+  gap: 2px;
+}
+
+.scroll-indicator {
+  width: 13px;
+  height: 4px;
+  background-color: #c2d1e0;
+  border-radius: 20px;
+}
+
+.active-indicator {
+  width: 24px;
+  height: 4px;
+  background-color: #003366;
+  border-radius: 20px;
+}
+
 /******************************* faq section ***************************************/
 .faq-container {
   display: flex;
+  flex-direction: column;
   gap: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 75px;
 }
+
 .faq-title {
   color: #003366;
 }
 
+.faq-content {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.faq-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .faq-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 40px;
+  border: 1px solid #003366;
+  border-radius: 16px;
+}
+
+.faq-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.faq-line {
+  width: 100%;
+  height: 1px;
+  background-color: #003366;
+}
+
+.faq-active {
 }
 .faq-question {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #343434;
 }
+
+.faq-img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* .faq-img:hover {
+  fill: red;
+} */
+
 .faq-answer {
+  font-size: 18px;
+  line-height: 27px;
+  color: #343434;
 }
 .question-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #003366;
+  padding: 58px 60px;
+  border-radius: 14px;
+  text-align: center;
+  align-items: center;
+  gap: 40px;
 }
+
 .question-title {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #fbfbfb;
 }
+.question-line {
+  width: 100%;
+  height: 1px;
+  background-color: #fbfbfb;
+}
+
 .question-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .question-input {
+  background-color: #fbfbfb;
+  border: 1px solid #fbfbfb;
+  border-radius: 3px;
+  padding: 18.5px 14px;
+  color: #343434;
+  font-size: 16px;
+  line-height: 27px;
 }
+
 .question-textarea {
+  width: 400px;
+  background-color: #fbfbfb;
+  border: 1px solid #fbfbfb;
+  border-radius: 3px;
+  padding: 12px 14px 75px 12px;
+  resize: none;
 }
+
+.question-input::placeholder,
+.question-textarea::placeholder {
+  color: #343434;
+}
+
 .question-button {
+  width: auto;
+  color: #003366;
+  font-size: 20px;
+  line-height: 30px;
+  transition: all 0.3s ease;
+  border: 1px solid #003366;
+  border-color: #003366;
+  width: 235px;
+}
+
+.question-button:hover {
+  background-color: #003366;
+  color: #e2e5e7;
+  border-color: #e2e5e7;
+}
+
+/******************************* footer section ***************************************/
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 0;
+}
+
+.footer-logo {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.license {
+  font-size: 16px;
+  line-height: 24px;
+  color: #003366;
+}
+.footer-list {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.footer-item {
+}
+.foter-link {
+  color: #343434;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
 }

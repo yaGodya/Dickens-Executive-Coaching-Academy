@@ -1,12 +1,17 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0 auto;
   box-sizing: border-box;
   padding: 0;
+}
+
+summary { 
+  list-style: none;
 }
 
 p {
@@ -22,7 +27,12 @@ h1 {
   margin: 0.67em 0;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -30,8 +40,8 @@ input,
 textarea,
 button {
   outline: none; /* Убирает стандартную обводку */
-  border: none;  /* Убирает границу, если она есть */
-} 
+  border: none; /* Убирает границу, если она есть */
+}
 
 hr {
   box-sizing: content-box; /* 1 */
@@ -125,12 +135,12 @@ fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
 
-ul,li {
+ul,
+li {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
 
 a {
   text-decoration: none;
